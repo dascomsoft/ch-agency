@@ -1,0 +1,195 @@
+* {
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "teko", sans;
+  font-weight: 400;
+  font-style: normal;
+}
+
+nav #logo {
+  width: 150px;
+  height: 75px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+header {
+  background-color: #e4e4e4;
+  padding: 15px;
+}
+header #header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header #header-container a {
+  font-size: 30px;
+  text-decoration: none;
+  font-weight: bolder;
+  color: #000;
+}
+header #header-container #openBtn {
+  cursor: pointer;
+  color: #000;
+}
+header #nav-links {
+  position: absolute;
+  top: -100vh;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  background-color: #e4e4e4;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+}
+header #nav-links #closeBtn {
+  position: absolute;
+  top: 25px;
+  right: 80px;
+  color: #000;
+  cursor: pointer;
+}
+header #nav-links a {
+  text-decoration: none;
+  font-size: 30px;
+  color: #000;
+  padding: 20px;
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+header #nav-links a:hover {
+  color: #4b0303;
+}
+
+/*MENU SHOWCASE*/
+.menu-showcase {
+  background-image: linear-gradient(rgba(20, 21, 51, 0.8), rgba(20, 21, 51, 0.8)), url(images/fruit6.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 200px 0 100px;
+  color: #fff;
+}
+.menu-showcase p {
+  font-family: "Satisfy", cursive;
+  font-size: 22px;
+}
+.menu-showcase .menu-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.menu-showcase .menu-title p {
+  font-family: "Satisfy", cursive;
+  font-size: 18px;
+}
+
+/*menu section*/
+.display-wrapper {
+  background-image: radial-gradient(#f5deb3, #f8f8ff);
+  padding: 100px 0 100px;
+}
+.display-wrapper #display-container {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+@media (max-width: 1200px) {
+  .display-wrapper #display-container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+}
+@media (max-width: 900px) {
+  .display-wrapper #display-container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+@media (max-width: 700px) {
+  .display-wrapper #display-container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+.display-wrapper img {
+  width: 100%;
+  mix-blend-mode: multiply;
+}
+.display-wrapper .display-detail {
+  text-align: center;
+}
+
+/*  SECTION FOOTER  */
+.section-footer {
+  background-color: #e4e4e4;
+  padding: 100px 0 50px;
+}
+.section-footer .section-footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+@media (max-width: 1100px) {
+  .section-footer .section-footer-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .section-footer .section-footer-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+.section-footer .section-footer-detail .logo {
+  width: 50px;
+  mix-blend-mode: multiply;
+}
+.section-footer .section-footer-detail p {
+  line-height: 3;
+}
+.section-footer .section-footer-detail p:hover {
+  color: #df0707;
+  cursor: pointer;
+}
+.section-footer .section-footer-detail a {
+  text-decoration: none;
+  color: #000;
+}
+.section-footer .section-footer-detail a:hover {
+  color: #df0707;
+  cursor: pointer;
+}
+.section-footer .section-footer-detail .icons {
+  display: flex;
+  gap: 20px;
+}
+.section-footer .section-footer-detail .icons svg {
+  border-radius: 50%;
+  border: 1px solid #ffa500;
+  background-color: #ffa500;
+  color: #fff;
+  margin-left: 5px;
+  padding: 10px;
+}
+.section-footer .section-footer-detail img {
+  position: relative;
+  top: -7px;
+}/*# sourceMappingURL=menu.css.map */
